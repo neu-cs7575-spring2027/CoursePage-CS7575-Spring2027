@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+	FIXME for a new class...
+	 1. In js/settings.js change class information
+	    and optionally add pages
+	 2. Update meeting time/location(s) + link(s)
+	 3. Update instruction team
+	 4. Update course goals/outcomes
+	 5. Update evaluation (grading scale for G vs UG!)
+	 6. Update schedule
+	 7. whatever else :)
+
+	Useful classes...
+	 school-section: creates a new block, with h1 for title
+	 keyvalue: within a school-section, creates a table with first column bolded
+	           and no borders
+-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title></title>
+
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<button type="button" class="navbar-toggle navbar-right" data-toggle="collapse" data-target="#myNavbar" id="burger">
+				<span class="icon-bar" style="background-color: white"></span>
+				<span class="icon-bar" style="background-color: white"></span>
+				<span class="icon-bar" style="background-color: white"></span>
+			</button>
+
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">
+					<span class="hidden-xs" id="brand-big"></span>
+					<span class="visible-xs" id="brand-small"></span>
+				</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+				</ul>
+			</div>
+
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="school-header">
+			<a href="https://www.ccis.northeastern.edu" target="_blank"><img id="logo" class="img-responsive" src="img/NU_khoury.png" /></a>
+
+			<div id="info" class="row">
+				<div class="col-md-2"><span class="var-semester"></span></div>
+				<div class="col-md-2"><span class="var-section"></span></div>
+			</div>
+		</div>
+
+		<!-- FIXME -->
+		
+		<div class="school-section">
+			<h1>AI Usage Policy</h1>
+
+			<p>
+				This course is about building agents that use AI to perform software engineering tasks, and using AI tools
+				effectively is one of the skills it aims to develop. We will therefore be permissive about the use of AI when
+				writing code, but some parts of the course must be your own work. This page explains what is allowed for each
+				part of the course and why. We will also discuss this policy in class during the first week.
+				If anything is unclear, ask the Instructor <em>before</em> using an AI tool, not after.
+			</p>
+
+			<h2>Course Project: Code</h2>
+			<p>
+				<strong>You may use AI tools freely when writing code for the course project.</strong>
+				This includes chatbots, coding assistants, and coding agents.
+				Learning to work with such tools, prompting them effectively, and critically evaluating what they produce
+				is part of what this course is meant to teach. Working with existing coding agents is also a good way to
+				learn how agents are designed and where they fall short.
+			</p>
+			<p>
+				However, <strong>you are responsible for all code that you submit</strong>, regardless of who or what wrote it.
+				Every team member should be able to explain how your agent works and why it was designed that way.
+				Expect to be asked about your code during the mid-semester review and the final presentation.
+				In your final report, briefly describe which AI tools you used and how you used them.
+			</p>
+
+			<h2>Project Proposal, Final Report, and Presentation Slides</h2>
+			<p>
+				<strong>The project proposal, the final report, and all presentation slides (for both your paper
+				presentations and your final project presentation) must be created by you, without the use of AI tools.</strong>
+				The only exception is that you may use spell-checkers and grammar checkers (but not features of such
+				tools that generate or rewrite text for you).
+			</p>
+			<p>
+				These are where you show your own understanding: of the papers you present, and of the design of your
+				agent, the choices you made, and what you learned from evaluating it. Being able to communicate these
+				things clearly in your own words is an important skill, and it is something that an AI tool cannot do for you.
+			</p>
+
+			<h2>In-Class Written Answers</h2>
+			<p>
+				The handwritten answers to questions about the assigned papers are written in class with pencil and paper.
+				No electronic devices (laptops, tablets, phones, etc.) may be used while writing them, unless approved as
+				an accommodation. These answers are meant to reflect your own reading and understanding of the papers.
+			</p>
+
+			<h2>If You Prefer Not to Use AI Tools</h2>
+			<p>
+				You are not required to use AI tools to write code for the project. If you have concerns about using them,
+				please talk to the Instructor early in the semester.
+			</p>
+
+			<h2>Violations</h2>
+			<p>
+				Using AI tools in ways that this policy does not allow is a violation of the course's
+				<a href="academic-integrity.html">Academic Integrity</a> policy, and will be handled accordingly.
+			</p>
+
+			<h2>Use of AI in Course Materials</h2>
+			<p>
+				AI tools were used to help build this course website. The Instructor has reviewed all of its content.
+			</p>
+		</div>
+
+		<div class="school-footer">
+			<footer>
+				<small><em>
+					<script>
+						document.write("This page was last modified on: " + document.lastModified +"");
+					</script>
+				</em></small>
+			</footer>
+		</div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/settings.js"></script>
+	<script>
+
+
+		$(document).ready(function(){
+
+			// enable tooltips
+			$('[data-toggle="tooltip"]').tooltip();
+
+			// prepare the page based upon settings
+			settingsReady();
+
+		});
+	</script>
+</body>
+</html>

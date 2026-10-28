@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+	FIXME for a new class...
+	 1. In js/settings.js change class information
+	    and optionally add pages
+	 2. Update meeting time/location(s) + link(s)
+	 3. Update instruction team
+	 4. Update course goals/outcomes
+	 5. Update evaluation (grading scale for G vs UG!)
+	 6. Update schedule
+	 7. whatever else :)
+
+	Useful classes...
+	 school-section: creates a new block, with h1 for title
+	 keyvalue: within a school-section, creates a table with first column bolded
+	           and no borders
+-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title></title>
+
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<button type="button" class="navbar-toggle navbar-right" data-toggle="collapse" data-target="#myNavbar" id="burger">
+				<span class="icon-bar" style="background-color: white"></span>
+				<span class="icon-bar" style="background-color: white"></span>
+				<span class="icon-bar" style="background-color: white"></span>
+			</button>
+
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">
+					<span class="hidden-xs" id="brand-big"></span>
+					<span class="visible-xs" id="brand-small"></span>
+				</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+				</ul>
+			</div>
+
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="school-header">
+			<a href="https://www.ccis.northeastern.edu" target="_blank"><img id="logo" class="img-responsive" src="img/NU_khoury.png" /></a>
+
+			<div id="info" class="row">
+				<div class="col-md-2"><span class="var-semester"></span></div>
+				<div class="col-md-2"><span class="var-section"></span></div>
+			</div>
+		</div>
+
+		<!-- FIXME -->
+		<div class="school-section">
+
+
+		<h1>Description</h1>
+			<p>
+				LLM-based agents are increasingly being used for software engineering tasks such as
+				generating unit tests, patching security vulnerabilities, and upgrading applications to
+				use newer versions of programming languages and libraries. This seminar will focus on how
+				to design and build such agents. Students will read, present, and discuss selected research
+				papers describing agentic systems and complete a course project in which they develop an
+				agent. Topics covered will include:
+			</p>
+			<ul>
+				<li>Agent Architectures and Design Patterns</li>
+				<li>Tool Use and Protocols</li>
+				<li>Context Management and Memory</li>
+				<li>Planning and Task Decomposition</li>
+				<li>Steering and Validation</li>
+				<li>Testing and Debugging Agentic Systems</li>
+				<li>Evaluation and Benchmarking</li>
+			</ul>
+
+		<h1>Course Outcomes</h1>
+
+			<p>By the end of this course, students will be able to:</p>
+			<ol>
+			<li><b>Explain</b> common architectures and design patterns for LLM-based agents and their trade-offs.</li>
+			<li><b>Design and implement</b> agents that use tools, manage context and memory, and plan and decompose tasks.</li>
+			<li><b>Apply</b> techniques for steering, validating, testing and debugging agent behavior.</li>
+			<li><b>Evaluate</b> agentic systems using benchmarks, and critically assess published research on them.</li>
+			<li><b>Build</b> an LLM-based agent for a software engineering task, and present the results.</li>
+			</ol>
+
+		<h1>Course Project</h1>
+
+                        <p>
+                        This course will involve the development, in a team setting, of an
+		LLM-based agent that performs a software engineering task, such as
+		generating unit tests, repairing bugs or security vulnerabilities, or
+		upgrading code to newer versions of programming languages and libraries.
+		The project will exhibit significant complexity and will provide students
+		with an opportunity to employ techniques covered during the lectures.
+		Students will work in teams of
+		approximately 4 people. Teams will be finalized in Week 2 (Tue 1/26).</p>
+
+<p>
+		The agent will be implemented using the TypeScript programming
+		language.</p>
+
+                        </div>
+
+                        <div class="school-section">
+                        <h1>Course Delivery</h1>
+
+                        <p>The course will feature a combination of
+                        lectures and presentations by the instructor, presentations and
+                        discussion of research papers by students, interactive class
+                        activities, and reviews and discussions of the course project.
+                        We also plan to have one or two guest lectures.
+                        </p>
+
+		<div class="school-section">
+		<h1>Your Responsibilities</h1>
+
+			<p>
+				This is a seminar, and much of the learning happens through discussion in class.
+				<strong>Active participation in class discussions is expected and required.</strong>
+				Everyone's perspective is valuable, and the quality of the discussion depends on
+				all students coming to class prepared and contributing.
+			</p>
+
+			<p>
+				Each week, you will be expected to:
+
+			<ul>
+                          <li>Read the assigned papers before class, and come prepared to discuss them. You will be asked to answer
+                              questions about the papers in class, in writing, without the use of electronic devices.</li>
+                          <li>Attend class and actively participate in discussions: ask questions,
+                              share your views, and engage with your classmates' presentations.</li>
+                          <li>When it is your turn, present an assigned paper and lead the discussion about it.</li>
+                          <li>Make steady progress on the course project with your team, and be prepared
+                              to discuss its status in class.</li>
+                          <li>Submit all deliverables by their due dates.</li> </ul>
+			
+			<p>It is also your responsibility to be
+			familiar with the course policy about <a
+			href="academic-integrity.html" >Academic
+			Integrity</a> and about <a
+			href="other-policies.html" >Other Course Policies</a>.</p>
+
+			<p>
+				<strong>PLEASE DO NOT COME TO CLASS IF YOU ARE ILL.</strong>
+				While we want you to share your knowledge and experiences, there are some things you shouldn't share. If you are unwell, please contact the instructor via e-mail to discuss how to catch up.
+			</p>
+
+
+                          </div>
+
+                          <div class="school-section">
+                          <h1>Getting Help</h1>
+			<p>
+				Sometimes, you may need extra help with something.
+				Please use the following escalation procedure for finding an answer or getting help...
+			</p>
+
+			<ul>
+				<li>Ask a classmate.</li>
+				<li>If that didn't work, post to
+				<a href="https://piazza.com/northeastern/fall2024/cs4530/info">Piazza</a>.  Perhaps some other classmate
+				can help solve your problem.</li>
+				<li>If that still didn't work, ask the Instructor during office hours.</li>
+			</ul>
+			
+			<p>
+				The Instructor will be checking the
+				discussion boards regularly and providing
+				answers <b>during weekdays</b>, and will endeavor to post
+				answers (and corrections!) in a timely fashion. 
+                                However, you are encouraged to post (and critique) answers as well.
+			</p>
+		</div>
+
+		<div class="school-section">
+                        <h1>Grading</h1>
+
+                        <p>
+				You will have the opportunity to demonstrate your knowledge of the materials discussed in the lectures and discussions through paper presentations, class participation, and project work.
+			</p>
+
+			<p>The final grade for this course will be
+                        calculated as a weighted average of the following components:
+<ul>
+  <li>Presenting research papers: <b>25%</b></li>
+  <li>Class participation: <b>25%</b></li>
+  <li>Course project: <b>50%</b>, calculated as the weighted average of several components:</li>
+  <ul>
+    <li>project proposal (due Tue 2/9): 10%</li>
+    <li>mid-semester review (Tue 3/2): 20%</li>
+    <li>final presentation and demo (Tue 4/27): 30%</li>
+    <li>final code and report (due Sat 4/24): 40%</li>
+  </ul>
+</ul>
+</p>
+
+<p>
+Class participation is assessed based on your activity in class: the questions and comments you contribute to the
+discussion of each paper and presentation, your contributions to in-class activities, and your handwritten answers to
+questions about the assigned papers. These answers are written in class with pencil and paper; <b>no electronic devices
+(laptops, tablets, phones, etc.) may be used</b> while writing them, unless approved as an accommodation.
+</p>
+
+<p>
+By default, each team member receives the same grade for the project but exceptions will be made if the level of contribution among team members varies considerably.
+</p>
+
+			<h2>Grading Scale</h2>
+
+			<div class="row">
+				<div class="col-md-1"><code>A</code></div>
+				<div class="col-md-2"><samp>[93 - 100]</samp></div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-1"><code>A-</code></div>
+				<div class="col-md-2"><samp>[90 - 93)</samp> </div>
+                                <div>(that is, 90 &le; your average
+				&lt; 93, etc.)</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-1"><code>B+</code></div>
+				<div class="col-md-2"><samp>[87 - 90)</samp></div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-1"><code>B</code></div>
+				<div class="col-md-2"><samp>[83 - 87)</samp></div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-1"><code>B-</code></div>
+				<div class="col-md-2"><samp>[80 - 83) </samp></div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-1"><code>C+</code></div>
+				<div class="col-md-2"><samp>[77 - 80)</samp></div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-1"><code>C</code></div>
+				<div class="col-md-2"><samp>[73 - 77)</samp></div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-1"><code>C-</code></div>
+				<div class="col-md-2"><samp>[70 - 73)</samp></div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-1"><code>D+</code></div>
+				<div class="col-md-2"><samp>[67 - 70)</samp></div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-1"><code>D</code></div>
+				<div class="col-md-2"><samp>[63 - 67)</samp></div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-1"><code>D-</code></div>
+				<div class="col-md-2"><samp>[60 - 63)</samp></div>
+                        </div>
+
+			<div class="row">
+				<div class="col-md-1"><code>F</code></div>
+				<div class="col-md-2"><samp>[0 - 60)</samp></div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-1">&nbsp;</div>
+			</div>
+
+			<p>
+				Scores will <b>not</b> be rounded (e.g., if the weighted average of your scores
+according to the weightings given above evaluates to a 92.7, your grade will be an A-).
+ A curve may be introduced at the Instructor's discretion.
+</p>
+
+<!-- <p>MITCH SAYS: I'm surprised at the way this table specifies the half-open -->
+<!-- intervals.  I would have made the intervals closed at the bottom, eg -->
+<!-- [60,63).  That way any grade that begins (unrounded) with a 60, 61, or -->
+<!-- 62 falls into the interval. (Insert smiley here.)</p> -->
+
+			<h2>Late Work</h2>
+
+			<p>
+				Your work is late if it is not turned in by the deadline. The official clock is the time when your work was pushed to your GitHub repository.
+			</p>
+
+			<p>
+				Submissions will be accepted up to <strong>24 hours</strong> after the deadline with a <strong>25% penalty</strong>.
+				The assignment will be graded and returned as normal, but the grade will be recorded as 75% of what was earned.
+				For example, if an on-time submission would have received a grade of 88 points, the same assignment submitted after the deadline would receive 66 points (88 x 0.75).
+			</p>
+
+			<p>
+				Sometimes life gets in the way of schedules.
+				Sickness or other unplanned or extraordinary events happen and will be dealt with individually.
+				It is your responsibility to ensure your situation is known to the Instructor as soon as reasonably possible.
+				You are accountable for being heard, which means you need to ensure that the Instructor heard you.
+			</p>
+
+
+			<p>
+				While "life happens," poor planning by you does not count.
+				And definitely do not wait to discuss gray areas.
+				For example, an interview opportunity arises (good!): you should not wait until the day before the assignment is due to let us know that you could not complete the assignment because you had to prepare for the interview.
+				That would be considered poor planning.
+				Good planning would be to alert the TA or Instructor that you got the interview and, while you hope to finish the assignment, there is a concern.
+				Then when you don’t finish on time, it’s clear that you planned your time and that will be taken into consideration.
+				These "good planning" situations will be considered individually.
+			</p>
+
+			<h2>Grade Appeals</h2>
+
+			<p>
+				If you have concerns about the grading
+				of your work, you need to let us know
+				right away.  
+				Grades will be
+				final 14 days after the time those
+				grades are announced.
+				After this time, no appeals will be considered. 
+			</p>
+		</div>
+		
+		
+
+		<div class="school-footer">
+			<footer>
+				<small><em>
+					<script>
+						document.write("This page was last modified on: " + document.lastModified +"");
+					</script>
+				</em></small>
+			</footer>
+		</div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/settings.js"></script>
+	<script>
+
+
+		$(document).ready(function(){
+
+			// enable tooltips
+			$('[data-toggle="tooltip"]').tooltip();
+
+			// prepare the page based upon settings
+			settingsReady();
+
+		});
+	</script>
+</body>
+</html>

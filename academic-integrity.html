@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+	FIXME for a new class...
+	 1. In js/settings.js change class information
+	    and optionally add pages
+	 2. Update meeting time/location(s) + link(s)
+	 3. Update instruction team
+	 4. Update course goals/outcomes
+	 5. Update evaluation (grading scale for G vs UG!)
+	 6. Update schedule
+	 7. whatever else :)
+
+	Useful classes...
+	 school-section: creates a new block, with h1 for title
+	 keyvalue: within a school-section, creates a table with first column bolded
+	           and no borders
+-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title></title>
+
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<button type="button" class="navbar-toggle navbar-right" data-toggle="collapse" data-target="#myNavbar" id="burger">
+				<span class="icon-bar" style="background-color: white"></span>
+				<span class="icon-bar" style="background-color: white"></span>
+				<span class="icon-bar" style="background-color: white"></span>
+			</button>
+
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">
+					<span class="hidden-xs" id="brand-big"></span>
+					<span class="visible-xs" id="brand-small"></span>
+				</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+				</ul>
+			</div>
+
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="school-header">
+			<a href="https://www.ccis.northeastern.edu" target="_blank"><img id="logo" class="img-responsive" src="img/NU_khoury.png" /></a>
+
+			<div id="info" class="row">
+				<div class="col-md-2"><span class="var-semester"></span></div>
+				<div class="col-md-2"><span class="var-section"></span></div>
+			</div>
+		</div>
+
+		<!-- FIXME -->
+		
+		<div class="school-section">
+			<h1>Academic Integrity</h1>
+
+			<p>
+				<strong>Individual assignments are just that - work that you do on your own.</strong>
+				For example, when you are asked to write a program for an individual assignment,
+				you should not discuss your solution with other students. 
+				If something is unclear, please ask a TA for clarification.
+			</p>
+
+			<p>
+				No illicit collaboration!
+				<strong>If unsure, ask the professor!</strong>
+			</p>
+
+			<p>
+				You must submit only your own work.
+				If you steal someone else's work, you fail the class.
+				If you are in doubt whether using others' work is allowed, you should assume that it is NOT allowed
+				unless the instructors confirm otherwise.
+			</p>
+
+			<p>
+				You are responsible for protecting
+				your work. If someone uses your work
+				(with or without your permission), you fail the class.
+			</p>
+
+			<h2>Using Third Party Materials</h2>
+			<p>
+				You are encouraged to use resources from the internet when it is explicitly allowed.
+				All materials used from other resources must be acknowledged and the sources/author must be properly credited.
+				Otherwise, you are stealing.
+				Failure to do so shall be considered plagiarism, which has severe repercussion to your grade and your academic standing in the University.
+				As a student in the University you are expected to be familiar with and abide by Northeastern University rules of academic honesty and integrity, including plagiarism.
+			</p>
+
+			<h2>Academic Integrity Policy</h2>
+			<p>
+				The University views academic
+			dishonesty as one of the most serious offenses
+			that a student can commit while in college,
+			and it imposes appropriate punitive sanctions on violators.
+				Here are some examples of academic dishonesty.
+				While this is not an all-inclusive list, we hope this will help you to understand some of the things instructors look for.
+				The following is excerpted from the <a href="https://osccr.sites.northeastern.edu/academic-integrity-policy/" target="_blank">University’s policy on academic integrity</a>:
+			</p>
+
+			<table class="table keyvalue table-striped">
+				<tr>
+					<td>Cheating</td>
+					<td>Intentionally using or attempting to use unauthorized materials, information or study aids in an academic exercise</td>
+				</tr>
+				<tr>
+					<td>Fabrication</td>
+					<td>Intentional and unauthorized falsification, misrepresentation, or invention of any data, or citation in an academic exercise</td>
+				</tr>
+				<tr>
+					<td>Plagiarism</td>
+					<td>Intentionally representing the words, ideas, or data of another as one’s own in any academic exercise without providing proper citation</td>
+				</tr>
+				<tr>
+					<td>Unauthorized Collaboration</td>
+					<td>Instances when students submit individual academic works that are substantially similar to one another; while several students may have the same source material, the analysis, interpretation, and reporting of the data must be each individual’s independent work</td>
+				</tr>
+				<tr>
+					<td>Participation in Academically <br />Dishonest Activities</td>
+					<td>Any action taken by a student with the intent of gaining an unfair advantage</td>
+				</tr>
+				<tr>
+					<td>Facilitating Academic <br />Dishonesty</td>
+					<td>Intentionally or knowingly helping or attempting to violate any provision of this policy</td>
+				</tr>
+			</table>
+
+		</div>
+
+
+		<div class="school-footer">
+			<footer>
+				<small><em>
+					<script>
+						document.write("This page was last modified on: " + document.lastModified +"");
+					</script>
+				</em></small>
+			</footer>
+		</div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/settings.js"></script>
+	<script>
+
+
+		$(document).ready(function(){
+
+			// enable tooltips
+			$('[data-toggle="tooltip"]').tooltip();
+
+			// prepare the page based upon settings
+			settingsReady();
+
+		});
+	</script>
+</body>
+</html>

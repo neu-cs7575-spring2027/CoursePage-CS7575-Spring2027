@@ -1,1 +1,1 @@
-# CoursePage-CS7575-Spring2027
+# CourseWebSite
